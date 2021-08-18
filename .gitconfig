@@ -1,0 +1,29 @@
+[user]
+	email = canduc17@gmail.com
+	name = caneta
+[alias]
+  br = branch
+  cm = commit
+  co = checkout
+  st = status -u
+  lg = log -20 --graph --oneline --decorate --all
+[core]
+	editor = nvim
+;	compression = 0
+[credential]
+	helper = cache --timeout=0
+ [http]
+;	proxy = http://proxy.ariadne.it:3128
+ 	postBuffer = 157286400
+ [https]
+;	proxy = http://proxy.ariadne.it:3128
+[diff]
+  tool = meld
+[difftool]
+  prompt = false
+[difftool "meld"]
+  cmd = meld "$LOCAL" "$REMOTE"
+[merge]
+    tool = meld
+[mergetool "meld"]
+  cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
